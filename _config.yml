@@ -1,0 +1,6 @@
+title: Marco Martinez Portfolio 
+description: >-
+         This is my portfolio showcasing my projects and skills.
+baseurl: "" # leave empty since this is your user page
+url: "https://Mm1279544.github.io" # replace YOURUSERNAME with your GitHub username
+theme: jekyll-theme-architect # replace minima with your chosen theme from the list
