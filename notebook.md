@@ -1,11 +1,11 @@
 # My Codeing Notebook
 
 ## Table of Contents
-- [Flutter Notes ](#flutter-notes)
-  - [What is Flutter](#What is flutter)
+- [Flutter Notes ](#day-1)
+  - [what-is-flutter](#what-is-flutter)
   - [Key terms and Definitions ](#key-terms-and-definitions)
-- [Day 2](#day-2)
-[Notebook Style Guide](#markdown-style-guide-for-coding-notebooks)
+- [Code Definitions](#code-definitions)
+- [Notebook Style Guide](#markdown-style-guide-for-coding-notebooks)
 
 ## Flutter Notes
 
@@ -42,6 +42,43 @@
 - How do you center a widget?
 - How do you align something to the left or right?
 - What widget adds space around content?
+
+
+## Code Definitions
+
+| Term | Definition | Base Structure / Syntax | Real Life Example | App Example |
+|------|------------|--------------------------|-------------------|-------------|
+|Variable      | A named container used to store a value that may change. | `var x = 5;` |  |  |
+|Constant      | A fixed value that cannot change once set. | `const PI = 3.14;` |  |  |
+|Data Type      | The kind of value a variable holds, like numbers or text. | `int`, `String`, `bool` |  |  |
+|String      | A sequence of characters used to represent words or text. | `"Hello World"` |  |  |
+|Integer      | Whole number values. | `int age = 16;` |  |  |
+|Double      | Number values with decimals. | `double age = 16.2;` |  |  |
+|Boolean      | A value that can be true or false. | `bool isLoggedIn = false;` |  |  |
+|List      | A collection of values in a specific order. | `List<String> names = [];` |Calendar  |Sign into profile has all your information in it  |
+|Null      | A special value that means “nothing.” | `String? name = null;` |When you register for school your classes are null but they have the placeholders  |  |
+|Function      | A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` |Have a light switch the turn on all the lights or on wthat only turn on one light  |Like in a app would you want to hold move foward or have to press it every single time  |
+|Parameter      | The information passed into a function to change how it works. | `greet(String name)` |If I log in to tiktok or instagram I am the parameter  |Playing fortnite and you are running or walking  |
+|Return      | The result a function gives back. | `return total;` |If you go to the bank and you finished you get a recipt  |Click space on a app the space comes up  |
+|Scope      | Where a variable or function can be used. | (No set syntax — concept-based) |If you have a starbucks gift card you can only use at starbucks that is the scope  |If you are in a app you need to import the apps scope   |
+|Class      | Blueprint for creating objects with specific structure and behavior. | `class Dog {}` |Take notes complete work  |  |
+|Object      | A specific version of a class. | `Dog myDog = Dog();` |20 students they are all objects  |In fortnite all guns that are created are a object  |
+|      | A variable that belongs to a class/object. | `String name;` |  |  |
+|      | A function that belongs to a class. | `void bark() {}` |  |  |
+|      | A special function used to set up a class when it’s created. | `Dog(this.name);` |  |  |
+|      | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |  |  |
+|      | Changing how a built-in or inherited function behaves. | `@override` |  |  |
+|      | A function that does not return a value. | `void printMessage() {}` |  |  |
+
+
+
+
+
+
+
+
+
+
 
 
 
