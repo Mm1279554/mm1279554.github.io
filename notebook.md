@@ -44,6 +44,44 @@
 - What widget adds space around content?
 
 
+
+
+
+
+
+## Flutter Definitions with structures
+
+| Term | Definition and Description | Base Structure | Real Life Example | App Example |
+|------|----------------------------|----------------|-------------------|-------------|
+|Main      | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |A car starts up  |  |
+|      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
+|      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  |  |
+|      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
+|      | A widget that shows things side-by-side. | `Row(...)` |  |  |
+|Container      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |On canva you open a new project have a container to add new designs  |  |
+|Text      | A widget to display text on the screen. | `Text('Hello')` |When you text your mom  |  |
+|Image.network      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |It takes up less space  |  |
+|ElevatedButton      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |Press the button the video starts playing  |  |
+|onPressed      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |onpressed take me to the next slide  |  |
+|StatelessWidget      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |Welcome page and about me page dosent have to be changed  |  |
+|Navigator      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |Takes me to next slide or next youtube video  |  |
+|@override      | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |When we want to customize override build method so how we want it to be but not chnage behavior  |  |
+|Paddding      | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |Padding to push off center and makes space   |  |
+|Center      | Aligns content in the center of the screen or container. | `Center(child: ...)` |Welcome to this app to be in the center  |  |
+|Wrap     | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |Wrtiting text going to wrap it to the next line  |  |
+|override      | This marks a method as one that’s replacing a method in a parent class. | `@override` |  |  |
+|Build      | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |Define that screen and build it shows up  |  |
+|      | Required in every widget class to describe what to show. | `build` |  |  |
+|      | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
+|      | A keyword used to pass a value to the parent widget. | `super.key` |  |  |
+|      | A keyword that means the value won't change and is set once. | `const` |  |  |
+
+
+
+
+
+
+
 ## Code Definitions
 
 | Term | Definition | Base Structure / Syntax | Real Life Example | App Example |
@@ -55,20 +93,20 @@
 |Integer      | Whole number values. | `int age = 16;` |  |  |
 |Double      | Number values with decimals. | `double age = 16.2;` |  |  |
 |Boolean      | A value that can be true or false. | `bool isLoggedIn = false;` |  |  |
-|List      | A collection of values in a specific order. | `List<String> names = [];` |Calendar  |Sign into profile has all your information in it  |
+|List      | A collection of values in a specific order. | `List<String> names = [];` |Calendar  |  |
 |Null      | A special value that means “nothing.” | `String? name = null;` |When you register for school your classes are null but they have the placeholders  |  |
-|Function      | A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` |Have a light switch the turn on all the lights or on wthat only turn on one light  |Like in a app would you want to hold move foward or have to press it every single time  |
-|Parameter      | The information passed into a function to change how it works. | `greet(String name)` |If I log in to tiktok or instagram I am the parameter  |Playing fortnite and you are running or walking  |
-|Return      | The result a function gives back. | `return total;` |If you go to the bank and you finished you get a recipt  |Click space on a app the space comes up  |
-|Scope      | Where a variable or function can be used. | (No set syntax — concept-based) |If you have a starbucks gift card you can only use at starbucks that is the scope  |If you are in a app you need to import the apps scope   |
+|Function      | A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` |Have a light switch the turn on all the lights or on wthat only turn on one light  | |
+|Parameter      | The information passed into a function to change how it works. | `greet(String name)` |If I log in to tiktok or instagram I am the parameter  ||
+|Return      | The result a function gives back. | `return total;` |If you go to the bank and you finished you get a recipt  |  |
+|Scope      | Where a variable or function can be used. | (No set syntax — concept-based) |If you have a starbucks gift card you can only use at starbucks that is the scope  |  |
 |Class      | Blueprint for creating objects with specific structure and behavior. | `class Dog {}` |Take notes complete work  |  |
-|Object      | A specific version of a class. | `Dog myDog = Dog();` |20 students they are all objects  |In fortnite all guns that are created are a object  |
-|      | A variable that belongs to a class/object. | `String name;` |  |  |
-|      | A function that belongs to a class. | `void bark() {}` |  |  |
-|      | A special function used to set up a class when it’s created. | `Dog(this.name);` |  |  |
-|      | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |  |  |
-|      | Changing how a built-in or inherited function behaves. | `@override` |  |  |
-|      | A function that does not return a value. | `void printMessage() {}` |  |  |
+|Object      | A specific version of a class. | `Dog myDog = Dog();` |20 students they are all objects  |  |
+|Property      | A variable that belongs to a class/object. | `String name;` |Water bottle has a capacity and name age belongs to a person  |  |
+|Method      | A function that belongs to a class. | `void bark() {}` |Complete homework writing notes  |Jump method belongs to people not table and chair |
+|Constructor | A special function used to set up a class when it’s created. | `Dog(this.name);` |Name of baby on a birht certificate  |Makeing a project and nameing your project  |
+|Abstraction      | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |Like driving a car just press the gas  |  |
+|Override      | Changing how a built-in or inherited function behaves. | `@override` |Waterbottle blue and 40 oz capacity |Shaq dunking then mr davidson dunking  |
+|Void      | A function that does not return a value. | `void printMessage() {}` |Turn lights on   | |
 
 
 
