@@ -57,14 +57,14 @@
 |      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |main.dart,return MaterialApp( debugShowCheckedModeBanner: false,title: 'TSA Portfolio',theme: ThemeData(  |
 |      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  | in showcase. dart, return Scaffold(body: Column(mainAxisAlignment: MainAxisAlignment.start,children: [  |
 |      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |in showcase.dart, body: Column( mainAxisAlignment: MainAxisAlignment.start, children: [   |
-|      | A widget that shows things side-by-side. | `Row(...)` |  |in   |
-|Container      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |On canva you open a new project have a container to add new designs  |  |
-|Text      | A widget to display text on the screen. | `Text('Hello')` |When you text your mom  |  |
-|Image.network      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |It takes up less space  |  |
-|ElevatedButton      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |Press the button the video starts playing  |  |
-|onPressed      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |onpressed take me to the next slide  |  |
-|StatelessWidget      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |Welcome page and about me page dosent have to be changed  |  |
-|Navigator      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |Takes me to next slide or next youtube video  |  |
+|      | A widget that shows things side-by-side. | `Row(...)` |  |in InfoCard.dart, child: Row(children: [ClipRRect(borderRadius: BorderRadius.circular(8),child: Image.network(imageUrl, width: 100, height: 100,fit:BoxFit.cover),   |
+|Container      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |On canva you open a new project have a container to add new designs  |In infoCard.dart, return Container(margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),padding: const EdgeInsets.all(12),decoration: BoxDecoration(  |
+|Text      | A widget to display text on the screen. | `Text('Hello')` |When you text your mom  |In InfoCard.dart, child: Text(description,style: const TextStyle(color: Colors.white),  |
+|Image.network      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |It takes up less space  |In Infocard.dart, child: Image.network(imageUrl, width: 100, height: 100, fit: BoxFit.cover),  |
+|ElevatedButton      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |Press the button the video starts playing  |In home.dart, ElevatedButton(onPressed: () => Navigator.pushNamed(context, '/background'),  |
+|onPressed      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |onpressed take me to the next slide  |In home.dart, onPressed: () => Navigator.pushNamed(context, '/background'),child: const Text('Next'),  |
+|StatelessWidget      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |Welcome page and about me page dosent have to be changed  |In home.dart, class HomeScreen extends StatelessWidget {const HomeScreen({super.key});  |
+|Navigator      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |Takes me to next slide or next youtube video  |In   |
 |@override      | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |When we want to customize override build method so how we want it to be but not chnage behavior  |  |
 |Paddding      | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |Padding to push off center and makes space   |  |
 |Center      | Aligns content in the center of the screen or container. | `Center(child: ...)` |Welcome to this app to be in the center  |  |
