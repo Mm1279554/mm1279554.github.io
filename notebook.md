@@ -53,11 +53,11 @@
 
 | Term | Definition and Description | Base Structure | Real Life Example | App Example |
 |------|----------------------------|----------------|-------------------|-------------|
-|Main      | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |A car starts up  |  |
-|      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
-|      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  |  |
-|      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
-|      | A widget that shows things side-by-side. | `Row(...)` |  |  |
+|Main      | A function that runs when your app starts. It tells Flutter what app to show. | |A car starts up  |in main.dart, void main() => runApp(MyPortfolioApp());  |
+|      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |main.dart,return MaterialApp( debugShowCheckedModeBanner: false,title: 'TSA Portfolio',theme: ThemeData(  |
+|      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  | in showcase. dart, return Scaffold(body: Column(mainAxisAlignment: MainAxisAlignment.start,children: [  |
+|      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |in showcase.dart, body: Column( mainAxisAlignment: MainAxisAlignment.start, children: [   |
+|      | A widget that shows things side-by-side. | `Row(...)` |  |in   |
 |Container      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |On canva you open a new project have a container to add new designs  |  |
 |Text      | A widget to display text on the screen. | `Text('Hello')` |When you text your mom  |  |
 |Image.network      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |It takes up less space  |  |
@@ -71,10 +71,10 @@
 |Wrap     | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |Wrtiting text going to wrap it to the next line  |  |
 |override      | This marks a method as one that’s replacing a method in a parent class. | `@override` |  |  |
 |Build      | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |Define that screen and build it shows up  |  |
-|      | Required in every widget class to describe what to show. | `build` |  |  |
-|      | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
-|      | A keyword used to pass a value to the parent widget. | `super.key` |  |  |
-|      | A keyword that means the value won't change and is set once. | `const` |  |  |
+|BuildContext      | Required in every widget class to describe what to show. | `build` |Move between tabs and the build context tracks where your at  |  |
+|    | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
+|Super.key      | A keyword used to pass a value to the parent widget. | `super.key` |email your teacher you are sending information and they are above  |  |
+|const      | A keyword that means the value won't change and is set once. | `const` |Cant change the code while its running  |  |
 
 
 
